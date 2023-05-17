@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexFill</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/example.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="row bg">
+            <div class="col bg">
+                <label for="#">Fornecedor</label>
+                <input type="text" class="text-truncate" value="Rafael de Souza Cunha Rafael de Souza">
+            </div>
+            <div class="col bg"></div>
+            <div class="col bg"></div>
+        </div>
+
+        <div class="d-flex bg mt-5"> 
+            <div class="bg flex-fill p-2">Hcode Treinamentos</div> <!-- Flex Fill = Preenche o campo conforme sua necessidade e distribui igualdade entre os campos. -->
+            <div class="bg flex-fill p-2">2</div> 
+            <div class="bg flex-fill p-2">3</div>
+        </div>
+
+        <div class="d-flex bg">
+            <div class="bg p-2 flex-grow-1">1</div> <!-- Flex Grow 1 = Preenche o campo por inteiro, e os outros que estão sem flex-grow-1, ficam sem espaço. -->
+            <div class="bg p-2">2</div>
+            <div class="bg p-2">3</div>
+        </div>
+
+        <div class="d-flex bg">
+            <div class="bg p-2 flex-shrink-1">1</div> <!-- Flex Shrink 1 = Preenche somente o necessario para o conteudo.  -->
+            <div class="bg p-2 w-50">2</div> 
+            <div class="bg p-2 w-50">3</div>
+        </div>
+
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

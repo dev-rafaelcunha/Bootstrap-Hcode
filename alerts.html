@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alerts</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="alert alert-success" role="alert">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis et quasi unde culpa excepturi itaque earum
+            quos error odit molestias dicta nostrum maxime repudiandae nihil sunt, assumenda quibusdam dignissimos
+            quisquam.
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="alert alert-secondary">
+                    Hello Hcode!
+                </div>
+            </div>
+            <div class="col">
+                <div class="alert alert-primary">
+                    Hello Hcode!
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm">
+                <div class="alert alert-danger">
+                    Error!!!
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="alert alert-warning">
+                    Error!!!
+                </div>
+            </div>
+        </div>
+
+        <div class="alert alert-info">
+            Informartion!
+            <a href="http://youtube.com/hcodebrasil">Youtube</a>
+        </div>
+
+        <div class="alert alert-dark">
+            <h4>Título</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid fugiat nisi, ad animi earum quo enim
+                optio necessitatibus veritatis eius reprehenderit totam a obcaecati autem tempora debitis accusamus
+                corrupti eligendi.</p>
+            <hr>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni officia blanditiis enim deserunt
+                repellendus ipsa vitae optio ut nulla, cum sapiente velit sequi, quod voluptas pariatur consequuntur
+                unde possimus! Sint?</p>
+        </div>
+
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ea iste eveniet voluptate natus
+            consequatur, dolores est sint omnis aliquam velit deserunt officia, explicabo, nemo possimus eum? Optio,
+            nobis vel!
+            <button class="close" data-dismiss="alert" aria-label="close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+
+        <button class="btn btn-primary" id="btn-close-all" type="button">Fechar Todos os Alertas</button>
+
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        $(() => {
+
+            $('#btn-close-all').on('click', e => {
+
+                $('.alert').alert('close');
+
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+.bg-orange{
+    background-color: #f37520;
+}
+
+nav {
+    background-color: #ededed;
+    height: 68vh;
+}
+
+.li-header {
+    font-size: 18px;
+}
+
+.li-nav {
+    font-size: 18px;
+}
+
+.lorem {
+    font-size: 18px;
+}
+
+footer {
+    background-color: #454545;
+    height: 26vh;
+}

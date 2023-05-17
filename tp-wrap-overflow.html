@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tp - Wrap Overflow</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/example.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="text-wrap" style="width: 150px; border: 1px solid red;">Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Ipsum
+            impedit adipisci delectus
+            corporis esse blanditiis inventore veniam eum mollitia, excepturi nobis deleniti, quasi ipsam reiciendis
+            explicabo, porro sapiente assumenda. Consectetur.</div>
+
+        <div class="text-nowrap" style="width: 150px; border: 1px solid red;">Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Ipsum
+            impedit adipisci delectus
+            corporis esse blanditiis inventore veniam eum mollitia, excepturi nobis deleniti, quasi ipsam reiciendis
+            explicabo, porro sapiente assumenda. Consectetur.</div>
+
+        <div class="text-truncate" style="width: 200px; border: 1px solid red;">Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Ipsum
+            impedit adipisci delectus
+            corporis esse blanditiis inventore veniam eum mollitia, excepturi nobis deleniti, quasi ipsam reiciendis
+            explicabo, porro sapiente assumenda. Consectetur.</div>
+
+            <p class="text-lowercase">Hcode treinamentos</p>
+            <p class="text-upercase">Hcode treinamentos</p>
+            <p class="text-capitalize">Hcode treinamentos</p>
+
+    </div>
+
+
+    <!-- OBS: text-wrap = Quebra as linhas em bloco. (Obrigatório definir uma largura)
+         text-nowrap = Ignora o campo e continua. (Obrigatório definir uma largura)
+         text-truncate = Le o texto até a largura definida. (Obrigatório definir uma largura) -->
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
